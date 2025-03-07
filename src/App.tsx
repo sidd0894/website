@@ -46,7 +46,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
+    <div className="min-h-screen bg-gradient-to-br from-blue-200 to-gray-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
       
@@ -55,7 +55,7 @@ function App() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
             className="text-center"
           >
             <h1 className="text-6xl font-bold text-gray-900 dark:text-white mb-6">
@@ -78,11 +78,11 @@ function App() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
             className="max-w-2xl text-center"
           >
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">About Me</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="px-7 md:px-0 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             I’m a passionate developer focused on mastering machine learning, deep learning, and computer vision. While I have basic web development knowledge, my primary interest lies in building projects that solve real-world problems using these technologies. I’m excited to deepen my expertise and create innovative solutions for various industries.
             </p>
           </motion.div>
@@ -92,11 +92,11 @@ function App() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
             className="max-w-2xl text-center"
           >
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">Get in Touch</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-12">
+            <p className="px-7 md:px-0 text-lg text-gray-600 dark:text-gray-300 mb-12">
               Let's connect and create something amazing together.
             </p>
             <SocialLinks />

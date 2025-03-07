@@ -24,9 +24,9 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, setActiveSection
           <motion.button
             key={section}
             onClick={() => scrollToSection(section)}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+            className={`w-1 h-1 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
               activeSection === section
-                ? 'bg-blue-500 scale-125'
+                ? 'bg-blue-400 scale-125'
                 : 'bg-gray-300 dark:bg-gray-600'
             }`}
             whileHover={{ scale: 1.5 }}
